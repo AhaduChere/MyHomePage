@@ -1,0 +1,22 @@
+     /*Button Styles */
+     nav{
+        background: rgb(100, 100, 100);
+        width: 550px;
+        display:Flex;
+        justify-content: space-between;
+        padding: 5px;
+        border-radius: 22px;
+        box-shadow: 2px 2px 20px rgba(0,0,0,0.3)
+        }
+      nav > a{
+        color:rgb(253, 248, 248);
+        text-decoration: none;
+        padding: 8px 16px;
+        border-radius: 22px;
+      }
+      nav > a:hover{
+          transition: 0.25s;
+          border-radius: 15px;
+          background:rgb(73, 73, 73);
+          Color:white;
+      }

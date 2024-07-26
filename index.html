@@ -26,11 +26,11 @@ content="width-device-width,initial-scale-1.0">
     }
      /*Background style*/
     .container {
-      min-height: 100vh; /* Set a minimum height to fill the viewport */
-      padding: 20px; /* Add padding to the container */
-      box-sizing: border-box; /* Ensure padding is included in the total height */
-      overflow-y: scroll; /* Enable vertical scrolling */
-      scrollbar-width: thin; /* Optionally adjust scrollbar width */
+      min-height: 100vh; 
+      padding: 20px; 
+      box-sizing: border-box; 
+      overflow-y: scroll; 
+      scrollbar-width: thin; 
       overflow-y: auto;
       overflow-x:hidden;
      scrollbar-width: thin; 
@@ -90,29 +90,26 @@ content="width-device-width,initial-scale-1.0">
 </head>
 <body>  
   <section>
-  <link rel="stylesheet" href="Background.CSS">
   <link rel="stylesheet" href="Search.css">
   <link rel="stylesheet" href="QuickLinks.css">
-  <link rel="stylesheet" href="SocialMediaCards.css">
   <div class="container"> 
-
-
   
   <h1>『HOME』</h1>
    
     <nav>   
-      <a href="#" onclick="scrollToProjects()">Projects</a>
+      <a href="https://open.spotify.com"target="_blank"rel="noreferrer noopener">Spotify</a>
 
-      <a href="https://mail.google.com/mail/u/1/#inbox">Email</a>
+      <a href="https://mail.google.com/mail/u/1/#inbox"target="_blank"rel="noreferrer noopener">Email</a>
 
-      <a href="https://canvas.unf.edu">Canvas</a>
+      <a href="https://canvas.unf.edu"target="_blank"rel="noreferrer noopener">Canvas</a>
       
-      <a href="https://replit.com/~">Replit</a>
+      <a href="https://replit.com/~"target="_blank"rel="noreferrer noopener">Replit</a>
       
-      <a href="https://Github.com">Github</a>
+      <a href="https://Github.com"target="_blank"rel="noreferrer noopener">Github</a>
 
-      <a href="https://stackoverflow.com">StackOverflow</a>
+      <a href="https://stackoverflow.com"target="_blank"rel="noreferrer noopener">StackOverflow</a>
     </nav>    
+
 
     <div class="search">
       <div class="search-box">
@@ -131,26 +128,7 @@ content="width-device-width,initial-scale-1.0">
   </section>
 
 
-
-<section>
-  <div id="Projects" class="container"> 
-<h1>『PROJECTS』</h1>
-
-</section>
-
-
-
-
-
-
-
-
-  </div>
-  <script> /*scroll Down when want to view projects*/
-   function scrollToProjects() {
-    var element = document.getElementById("Projects");
-    element.scrollIntoView({ behavior: "smooth" });
-  }
+  <script> 
     /*searches google*/
     function searchGoogle() {
       var query = document.getElementById("searchInput").value;
@@ -164,9 +142,6 @@ content="width-device-width,initial-scale-1.0">
       }
     });
   </script>
-
-
-
 
 </body>
 </html>

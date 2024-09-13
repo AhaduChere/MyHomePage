@@ -11,12 +11,12 @@ content="width-device-width,initial-scale-1.0">
 <title>Welcome</title>
 
   <style>
-    body {  /*Sets up Background*/
+    body { 
        margin: auto;
     font-family: Arial, sans-serif; 
     }
 
-    h1 { /*Title Font*/
+    h1 { 
       font-family: Georgia, serif;
       font-size: 48px;
       color: rgb(187, 186, 186);
@@ -24,68 +24,7 @@ content="width-device-width,initial-scale-1.0">
       text-align: center;
       margin-top: 0;
     }
-     /*Background style*/
-    .container {
-      min-height: 100vh; 
-      padding: 20px; 
-      box-sizing: border-box; 
-      overflow-y: scroll; 
-      scrollbar-width: thin; 
-      overflow-y: auto;
-      overflow-x:hidden;
-     scrollbar-width: thin; 
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      flex-direction: column;
-      height: 100vh;
-        background: radial-gradient(
-          circle farthest-side at 0% 50%,
-          #282828 23.5%,
-          rgba(255, 170, 0, 0) 0
-        )
-        21px 30px,
-      radial-gradient(
-          circle farthest-side at 0% 50%,
-          #2c3539 24%,
-          rgba(240, 166, 17, 0) 0
-        )
-        19px 30px,
-      linear-gradient(
-          #282828 14%,
-          rgba(240, 166, 17, 0) 0,
-          rgba(240, 166, 17, 0) 85%,
-          #282828 0
-        )
-        0 0,
-      linear-gradient(
-          150deg,
-          #282828 24%,
-          #2c3539 0,
-          #2c3539 26%,
-          rgba(240, 166, 17, 0) 0,
-          rgba(240, 166, 17, 0) 74%,
-          #2c3539 0,
-          #2c3539 76%,
-          #282828 0
-        )
-        0 0,
-      linear-gradient(
-          30deg,
-          #282828 24%,
-          #2c3539 0,
-          #2c3539 26%,
-          rgba(240, 166, 17, 0) 0,
-          rgba(240, 166, 17, 0) 74%,
-          #2c3539 0,
-          #2c3539 76%,
-          #282828 0
-        )
-        0 0,
-      linear-gradient(90deg, #2c3539 2%, #282828 0, #282828 98%, #2c3539 0%) 0 0
-        #282828;
-    background-size: 40px 60px;
-  }
+
    </style>
 </head>
 <body>  
@@ -94,6 +33,7 @@ content="width-device-width,initial-scale-1.0">
   <section>
   <link rel="stylesheet" href="Search.css">
   <link rel="stylesheet" href="QuickLinks.css">
+  <link rel="stylesheet" href="Background.css">
   <div class="container"> 
   
   <h1>『HOME』</h1>
@@ -112,7 +52,6 @@ content="width-device-width,initial-scale-1.0">
       <a href="https://stackoverflow.com"target="_blank"rel="noreferrer noopener">StackOverflow</a>
     </nav>    
 
-
     <div class="search">
       <div class="search-box">
         <div class="search-field">
@@ -130,7 +69,6 @@ content="width-device-width,initial-scale-1.0">
   </div>
   </section>
 
-
   <script> 
     /*searches google*/
     function searchGoogle() {
@@ -138,7 +76,7 @@ content="width-device-width,initial-scale-1.0">
       var url = "https://www.google.com/search?q=" + encodeURIComponent(query);
       window.open(url, "_blank");
     }
-          /*Enter button to search*/
+          /*Can use enter button instead of clicking */
     document.getElementById("searchInput").addEventListener("keypress", function(event) {
       if (event.key === "Enter") {
         searchGoogle();

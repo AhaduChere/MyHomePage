@@ -93,8 +93,8 @@
  
  .search-box-icon:hover {
    border-color: var(--input-border-hover-color);
-   width: 80px; /* Adjust the width as needed */
-   height: 45px; /* Adjust the height as needed */
+   width: 80px; 
+   height: 45px; 
  }
  
  .btn-icon-content {
